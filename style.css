@@ -1,0 +1,384 @@
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+	outline: none !important;
+}
+
+body {
+	margin: 0;
+	background-color: #cfdef3;
+	overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  background: url('images/bg.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+	/* background-color: #F7F9F9; */
+}
+
+.logo {
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+
+.logo img {
+	width: 70px;
+	/* height: 70px; maybe yes */
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none !important;
+}
+
+#crossfit {
+	padding-top: 6px;
+	/* height: 80%; */
+	/* width: auto; */
+
+}
+
+.box select {
+	border: none;
+	font-size: 16px;
+}
+
+hr {
+	border: 2px solid black;
+	border-style: none none dotted;
+}
+
+#workoutCard {
+	background-color: #F7F9F9 !important;
+}
+
+.logo:hover {
+	background-color: #FFE633;
+	/* barbel colors: green #9CC055,blue #399CE9; yellow; #FFE633; */
+}
+
+.pin {
+	width: 30px;
+	height: 30px;
+}
+
+
+#full-page-content {
+	width: 100vw;
+	/* height: 100vh; */
+	/* max-height: 100vh; */
+	display: flex;
+	flex-direction: column;
+
+}
+
+.header {
+  /* background-color: #59C39F; */
+  background-color: #262625;
+	/* height: 90px; */
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+}
+
+h1 {
+	font-family: 'Patrick Hand', cursive;
+	/* color: #545351; */
+	color: rgb(65, 62, 62);
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 60vw;
+}
+
+.quotes {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 30px;
+	color: rgb(65, 62, 62);
+}
+
+
+#main-box {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  min-height: 89vh;
+	/* background-color:  #cfdef3; */
+
+}
+
+.footer {
+	width: 100vw;
+  /* background-color: #59C39F; */
+  background-color: #262625;
+	display: flex;
+	flex-direction: row;
+	height: 70px;
+	justify-content: space-around;
+	color: #F7F9F9;
+	font-weight: bold;
+	align-items: center;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#workoutCard {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+	padding-top: 10px;
+	width: 60vw;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 1.2em;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+	/* background-color:#FFE633;  */
+}
+
+.selectors {
+  display: flex;
+  width: inherit;
+  /* justify-content: space-between; */
+}
+.workoutTypeSelector {
+	/* // the red color : #D7423F; */
+	border: 2px solid #314749;
+  font-size: 24px;
+  font-stretch: semi-expanded;
+	flex-grow: 1;
+	padding: 5px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	/* background: #FFE633;
+	background-image: none; */
+}
+.selectors button {
+  margin: 5px;
+  color: #FCFCFC;
+}
+
+#amrap {
+  background-color: #F6BA33;
+}
+
+#forTime {
+  background-color: #53C1F2;
+}
+
+#benchmarks {
+ background-color: #C853E4;
+}
+
+#mixed {
+  background-color: #6DD245;
+}
+/* .selectors .workoutTypeSelector button:nth-child(1) {
+  
+} */
+
+#go-btn {
+	-webkit-appearance: none;
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	margin: 15px 0 30px 5px;
+	border: 2.5px solid black;
+	border-radius: 50%;
+	font-size: 3.5em;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #59C39F;
+	color: #F7F9F9;
+	align-self: center;
+}
+
+/* Similar animation seen at https://css-tricks.com/almanac/properties/t/transform/ */
+#go-btn:hover {
+	animation: roll 0.6s;
+	transform: rotate(0deg);
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.description {
+	box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.5);
+	padding: 0 10px 0 10px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	font-family: Arial;
+}
+#workoutInstructions {
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.timerBtnContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.timerBtnContainer button {
+	flex-grow: 1;
+}
+
+#timerValues {
+	font-size: 2em;
+}
+
+
+/* #399CE9; yellow; #FFE633;
+} */
+
+
+.timer-btns {
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 2px;
+	color: #F7F9F9;
+}
+
+.timer-btns:hover {
+	color: black;
+	cursor: pointer;
+}
+
+#start {
+	background-color: #59C39F;
+}
+
+#stop {
+	background-color: #D7423F;
+}
+
+.greenButton {
+	width: 300px;
+	height: 300px;
+
+}
+
+
+.hearts {
+	color: rgb(236, 71, 71);
+	font-size: 15px;
+}
+
+.name {
+
+	font-size: 16px;
+	letter-spacing: .08em;
+	font-weight: 500;
+	padding-right: 10px;
+}
+
+.link-icons {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	/* border-radius: 100%; */
+	/* width : 60px;
+	height : 60px; */
+	object-fit: cover;
+}
+
+.linkContainer {
+	margin: 10px;
+}
+
+p {
+	margin-block-end: .5em;
+	margin-block-start: 0em;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+#copyright {
+
+	font-size: 16px;
+	letter-spacing: .08em;
+	font-weight: 500;
+	padding-left: 5px;
+}
+
+/* cool red - #BA5350 */
+
+/* Iphone X and Pixel 2 */
+@media only screen
+and (max-width: 600px) {
+	.footer {
+		display: block;
+		text-align: center;
+		height: 20%;
+		/* margin-top: 40px; */
+		bottom: 0;
+		padding-bottom: 10px;
+  }
+  
+  .selectors {
+    flex-direction: column;
+  }
+
+	#copyright {
+		margin-top: 20px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	.workoutTypeSelector {
+		font-size: 20px;
+	}
+
+	#go-btn {
+		width: 130px;
+		height: 130px;
+		font-size: 3rem;
+
+	}
+
+}
+
+/* Desktop/Laptop/Tablet */
+@media only screen
+and (min-width: 601px) {
+
+
+	.header {
+		height: 70px;
+	}
+}
+
+/* Galaxy Note 9 */
+@media screen
+and (max-width: 600px)
+and (min-height: 700px) {
+	#full-page-content {
+		/* height: 100vh; */
+	}
+}

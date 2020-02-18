@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Patrick+Hand&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.js"></script>
+	<script defer src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>MooDivator</title>
+</head>
+
+<body>
+
+<div id="full-page-content">
+	<header class="header">
+		<a class="logo" href="index.html"><span title="Home">
+            <img src="images/dumbell.png" alt="Home"></span>
+		</a>
+		<a class="logo" href="https://www.crossfit.com/" target="_blank"><span title="CrossFit Website">
+          <img src="images/snatch.png" id="crossfit" alt="CrossFit"></span></a>
+	</header>
+
+
+	<div id="main-box">
+
+		<h1 id="quoteDisplay" >Welcome to MooDivator! Get ready to sweat and stay motivated through your workout with our
+			inspiring quotes!</h1>
+
+		<div class="box">
+			<!-- <select id="workoutTypeSelector"> -->
+        <!-- <button value="">Select a type of workout...</input> -->
+        <div class="selectors" id="fuck">
+				<button id="amrap" class="workoutTypeSelector" value="amrap" onclick="selectWorkoutType(this)">AMRAP</button>
+				<button id="forTime" class="workoutTypeSelector" value="forTime" onclick="selectWorkoutType(this)">For time</button>
+				<button id="benchmarks"class="workoutTypeSelector" value="benchmarks" onclick="selectWorkoutType(this)">Benchmarks</button>
+        <button id="mixed"class="workoutTypeSelector" value="mixed" onclick="selectWorkoutType(this)">Mixed</button>
+      </div>
+			<!-- </select> -->
+		</div>
+
+		<div id="workoutCard" class="box description hidden">
+			<img alt="pin" src="./images/pin.png" class="pin">
+			<p id="workoutType" class="workout"></p>
+			<p id="workoutInstructions" class="workout"></p>
+			<p id="workoutExercise" class="workout"></p>
+
+			<div id="timerContainer">
+				<div id="timerValues"></div>
+				<div class="timerBtnContainer">
+					<button class="timer-btns" id="start">Start</button>
+					<button class="timer-btns" id="stop">Stop</button>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<button id="go-btn" onclick="generateWorkout">GO!</button>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p id="copyright">&copy;MooDivator 2019</p>
+
+		<p class="message">Created with <span class="hearts">&hearts;</span> by <span class="name">Svetla
+          Syrimis</span>
+		</p>
+
+		<nav class="linkContainer">
+			<a href="https://twitter.com/SvetlaSyrimis" target="_blank">
+				<img src="images/twitter-icon.svg" class="link-icons" alt="Twitter">
+			</a>
+			<a href="https://github.com/svetlasyrimis" target="_blank">
+				<img src="images/github-icon.png" class="link-icons" alt="GitHub">
+			</a>
+		</nav>
+	</footer>
+</div>
+
+</body>
+
+</html>
